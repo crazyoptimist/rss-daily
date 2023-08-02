@@ -1,0 +1,12 @@
+{
+  "name": "rss-daily",
+  "version": "1.0.0",
+  "description": "check favorite rss in one go",
+  "dependencies": {
+    "rss-parser": "^3.12.0"
+  },
+  "scripts": {
+    "build": "node index.js"
+  },
+  "license": "MIT"
+}
