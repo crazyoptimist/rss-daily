@@ -29,21 +29,23 @@ sources.sections.forEach((section) => {
   });
 });
 
-Promise.all(promises).then((feeds) => {
-  let output = ``;
+Promise.all(promises)
+  .then((feeds) => {
+    let output = ``;
 
-  feeds.forEach((feed) => {
-    output += `<section class="row">`;
-      output += `<div class="col">`;
-        output += `<h2 class="h3">${feed.title}</h2>`;
-        output += '<ul class="mb-4">';
-        output += feed.items.slice(0, 10).map(itemTemplate).join('');
-        output += '</ul>';
-      output += `</div>`;
-    output += `</section>`;
-  });
+    feeds.forEach((feed) => {
+      output += `<section class="row">`;
+        output += `<div class="col">`;
+          // output += `<h2 class="h3">${feed.title}</h2>`;
+          output += '<ul class="mb-4">';
+          output += feed.items.slice(0, 10).map(itemTemplate).join('');
+          output += '</ul>';
+        output += `</div>`;
+      output += `</section>`;
+    });
 
-  output = templates.document(output);
+    output = templates.document(output);
 
-  createFile('./dist/index.html', output)
-});
+    createFile('./dist/index.html', output)
+  })
+  .catch(err => console.log(JSON.stringify(err)))

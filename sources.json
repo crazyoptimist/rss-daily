@@ -12,8 +12,16 @@
           "url": "https://hnrss.org/best"
         },
         {
-          "title": "Hacker News Top 30",
-          "url": "https://rsshub.app/github/issue/meixger/hackernews-daily"
+          "url": "https://feeds.simplecast.com/54nAGcIl"
+        },
+        {
+          "url": "https://www.politico.com/rss/politicopicks.xml"
+        },
+        {
+          "url": "cdn.feedcontrol.net/8/1114-wioSIX3uu8MEj.xml"
+        },
+        {
+          "url": "http://rss.cnn.com/rss/cnn_topstories.rss"
         }
       ]
     }
