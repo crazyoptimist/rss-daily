@@ -4,11 +4,9 @@
       "title": "Tech",
       "items": [
         {
-          "title": "the Verge",
           "url": "https://www.theverge.com/rss/index.xml"
         },
         {
-          "title": "Hacker News",
           "url": "https://hnrss.org/best"
         },
         {
@@ -16,9 +14,6 @@
         },
         {
           "url": "https://www.politico.com/rss/politicopicks.xml"
-        },
-        {
-          "url": "cdn.feedcontrol.net/8/1114-wioSIX3uu8MEj.xml"
         },
         {
           "url": "http://rss.cnn.com/rss/cnn_topstories.rss"
