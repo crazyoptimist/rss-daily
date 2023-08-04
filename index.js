@@ -36,7 +36,7 @@ Promise.all(promises)
     feeds.forEach((feed) => {
       output += `<section class="row">`;
         output += `<div class="col">`;
-          // output += `<h2 class="h3">${feed.title}</h2>`;
+          output += `<h3 class="h3">${feed.title}</h3>`;
           output += '<ul class="mb-4">';
           output += feed.items.slice(0, 10).map(itemTemplate).join('');
           output += '</ul>';

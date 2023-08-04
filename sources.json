@@ -4,19 +4,22 @@
       "title": "Tech",
       "items": [
         {
-          "url": "https://www.theverge.com/rss/index.xml"
+          "url": "https://bitcoinist.com/feed/"
         },
         {
-          "url": "https://hnrss.org/best"
+          "url": "https://cryptopotato.com/feed/"
         },
         {
-          "url": "https://feeds.simplecast.com/54nAGcIl"
+          "url": "https://crypto.news/feed/"
         },
         {
-          "url": "https://www.politico.com/rss/politicopicks.xml"
+          "url": "https://www.cryptodaily.co.uk/feed"
         },
         {
-          "url": "http://rss.cnn.com/rss/cnn_topstories.rss"
+          "url": "https://news.bitcoin.com/feed/"
+        },
+        {
+          "url": "https://techcrunch.com/feed/"
         }
       ]
     }
