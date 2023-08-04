@@ -4,15 +4,6 @@
       "title": "Tech",
       "items": [
         {
-          "url": "https://bitcoinist.com/feed/"
-        },
-        {
-          "url": "https://cryptopotato.com/feed/"
-        },
-        {
-          "url": "https://crypto.news/feed/"
-        },
-        {
           "url": "https://www.cryptodaily.co.uk/feed"
         },
         {
@@ -20,6 +11,15 @@
         },
         {
           "url": "https://techcrunch.com/feed/"
+        },
+        {
+          "url": "http://feeds.harvardbusiness.org/harvardbusiness?format=xml"
+        },
+        {
+          "url": "http://feeds.bbci.co.uk/news/rss.xml"
+        },
+        {
+          "url": "https://www.theguardian.com/uk/rss"
         }
       ]
     }
