@@ -11,15 +11,6 @@
         },
         {
           "url": "https://techcrunch.com/feed/"
-        },
-        {
-          "url": "http://feeds.harvardbusiness.org/harvardbusiness?format=xml"
-        },
-        {
-          "url": "http://feeds.bbci.co.uk/news/rss.xml"
-        },
-        {
-          "url": "https://www.theguardian.com/uk/rss"
         }
       ]
     }

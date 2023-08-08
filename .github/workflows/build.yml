@@ -4,7 +4,8 @@ on:
     branches:
       - main
   schedule:
-      - cron: "0 0 * * *"
+    # Only on weekdays
+    - cron: "0 0 * * 1,2,3,4,5"
 
 permissions:
   contents: write
