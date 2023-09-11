@@ -4,13 +4,16 @@
       "title": "Tech",
       "items": [
         {
+          "url": "https://techcrunch.com/feed/"
+        },
+        {
+          "url": "https://news.microsoft.com/feed/"
+        },
+        {
           "url": "https://www.cryptodaily.co.uk/feed"
         },
         {
           "url": "https://news.bitcoin.com/feed/"
-        },
-        {
-          "url": "https://techcrunch.com/feed/"
         }
       ]
     }
