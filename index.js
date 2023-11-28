@@ -25,7 +25,7 @@ function itemTemplate(item) {
 
 sources.sections.forEach((section) => {
   section.items.forEach((item) => {
-    promises.push(parser.parseURL(item.url))
+    promises.push(parser.parseURL(item.url).catch(e => console.error(`Error parsing ${item.url}`, e)))
   });
 });
 

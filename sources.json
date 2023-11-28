@@ -1,19 +1,28 @@
 {
   "sections": [
     {
-      "title": "Tech",
+      "title": "Tech Feeds",
       "items": [
         {
           "url": "https://techcrunch.com/feed/"
         },
         {
-          "url": "https://news.microsoft.com/feed/"
+          "url": "https://www.theverge.com/rss/frontpage"
         },
         {
-          "url": "https://www.cryptodaily.co.uk/feed"
+          "url": "https://openai.com/blog/rss"
         },
         {
-          "url": "https://news.bitcoin.com/feed/"
+          "url": "https://machinelearningmastery.com/feed/"
+        },
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/feed"
+        },
+        {
+          "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+        },
+        {
+          "url": "https://feeds.feedburner.com/blogspot/gJZg"
         }
       ]
     }
