@@ -1,9 +1,9 @@
-const fs = require('fs');
-let Parser = require('rss-parser');
-const templates = require('./templates.js');
+const fs = require("fs");
+let Parser = require("rss-parser");
+const templates = require("./templates.js");
 let parser = new Parser();
 const promises = [];
-const sources = JSON.parse(fs.readFileSync('sources.json'));
+const sources = JSON.parse(fs.readFileSync("sources.json"));
 
 // Create the requried folders
 fs.mkdir(`./dist`, () => {});
@@ -11,7 +11,7 @@ fs.mkdir(`./dist`, () => {});
 function createFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (!err) {
-      console.log('File created: ' + fileName);
+      console.log("File created: " + fileName);
     }
   });
 }
@@ -20,12 +20,16 @@ function itemTemplate(item) {
   return `<li class="mb-1">
     <a rel="noopener" target="_blank" href="${item.link}" title="${item.title}">${item.title}</a>
     <time datetime="${item.pubDate}" class="ps-2 small">${item.pubDate}</time>
-  </li>`
+  </li>`;
 }
 
 sources.sections.forEach((section) => {
   section.items.forEach((item) => {
-    promises.push(parser.parseURL(item.url).catch(e => console.error(`Error parsing ${item.url}`, e)))
+    promises.push(
+      parser
+        .parseURL(item.url)
+        .catch((e) => console.error(`Error parsing ${item.url}`, e)),
+    );
   });
 });
 
@@ -35,17 +39,17 @@ Promise.all(promises)
 
     feeds.forEach((feed) => {
       output += `<section class="row">`;
-        output += `<div class="col">`;
-          // output += `<h3 class="h3">${feed.title}</h3>`;
-          output += '<ul class="mb-4">';
-          output += feed.items.slice(0, 10).map(itemTemplate).join('');
-          output += '</ul>';
-        output += `</div>`;
+      output += `<div class="col">`;
+      output += `<h3 class="h3">${feed.title}</h3>`;
+      output += '<ul class="mb-4">';
+      output += feed.items.slice(0, 10).map(itemTemplate).join("");
+      output += "</ul>";
+      output += `</div>`;
       output += `</section>`;
     });
 
     output = templates.document(output);
 
-    createFile('./dist/index.html', output)
+    createFile("./dist/index.html", output);
   })
-  .catch(err => console.log(JSON.stringify(err)))
+  .catch((err) => console.log(JSON.stringify(err)));

@@ -4,10 +4,10 @@
       "title": "Tech Feeds",
       "items": [
         {
-          "url": "https://techcrunch.com/feed/"
+          "url": "https://www.theverge.com/rss/cryptocurrency/index.xml"
         },
         {
-          "url": "https://www.theverge.com/rss/frontpage"
+          "url": "https://techcrunch.com/feed/"
         },
         {
           "url": "https://openai.com/blog/rss"
