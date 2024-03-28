@@ -3,9 +3,9 @@ on:
   push:
     branches:
       - main
-  schedule:
-    # Only on weekdays
-    - cron: "0 0 * * 1,2,3,4,5"
+  # schedule:
+  #   # Only on weekdays
+  #   - cron: "0 0 * * 1,2,3,4,5"
 
 permissions:
   contents: write
@@ -20,7 +20,7 @@ jobs:
         run: |
           npm ci --omit=dev
           npm run build
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v4
-        with:
-          folder: dist
+      # - name: Deploy
+      #   uses: JamesIves/github-pages-deploy-action@releases/v4
+      #   with:
+      #     folder: dist

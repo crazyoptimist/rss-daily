@@ -1,7 +1,7 @@
 {
   "name": "rss-daily",
   "version": "1.0.0",
-  "description": "check favorite rss in one go",
+  "description": "Check your favorite rss in one go",
   "dependencies": {
     "rss-parser": "^3.12.0"
   },
